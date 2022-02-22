@@ -1,0 +1,222 @@
+:root {
+/*-- Font Size --*/
+    --website-name: 3.6rem;
+    --menu: 2.4rem;
+    --title: 4.8rem;
+    --pretitle: 1.8rem;
+    --section-title: 4.8rem;
+    --section-title2: 3.6rem;
+    --section1-p: 1.8rem;
+    --section1-span: 1.4rem;
+    --section1-input: 1.8rem;
+    --section1-button: 1.8rem;
+    --section2-title: 2.4rem;
+    --section2-p: 1.6rem;
+    --section2-button: 1.6rem;
+    --section3-tech: 1.4rem;
+    --section3-project: 2.4rem;
+    --section3-more: 2.4rem;
+    --section4-pretitle: 1.8rem;
+    --section4-title: 3.6rem;
+    --section4-p: 1.6rem;
+    --section5-cite: 3.6rem;
+    --section5-name: 2.4rem;
+    --section5-rol: 1.8rem;
+    --footer-menu: 1.8rem;
+    --footer-website-name: 3.6rem;
+    --footer-span: 1.4rem;
+    --footer-input: 1.8rem;
+    --footer-button: 1.8rem;
+    --footer-created: 1.4rem;
+}
+
+html {
+    scroll-padding: 22em;
+}
+
+.main {
+    width: 100vw;
+    max-width: 1440px;
+    margin: 0 auto;
+}
+
+.header {
+    width: 100vw;
+    padding: 2em 1em 2em 4em;
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-content {
+    width: auto;
+}
+
+.menu-btn {
+    display: none;
+}
+
+.header-nav {
+    height: auto;
+}
+
+.header-nav .menu {
+    display: flex;
+}
+
+.header-nav .menu__item {
+    margin: 0 2em;
+}
+
+.close-menu {
+    height: auto;
+}
+
+.home {
+    margin: 20em 12em;
+    padding: 0 10em;
+}
+
+.team-image {
+    height: 40em;
+    margin: 4em -14em;
+}
+
+.team-image picture img {
+    border-radius: 24px;
+}
+
+.title {
+    width: 12em;
+    line-height: 7.2rem;
+}
+
+.home .section-title {
+    width: 10em;
+    line-height: 7.2rem;
+}
+
+.section-para {
+    width: 19.6em;
+}
+
+.home .contact {
+    margin: 3em 0;
+    width: 44em;
+}
+
+.services {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin: 12em;
+    padding: 8em 4em;
+}
+
+.services .section-title {
+    font-size: var(--section-title2);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 12em;
+    line-height: 5.4rem;
+}
+
+.services-card {
+    width: 30em;
+}
+
+.works {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    position: relative;
+    margin: 2em 12em;
+    padding: 12em 0 6em;
+}
+
+.works .section-title {
+    margin: auto;
+    width: 14em;
+    position: absolute;
+    top: 0;
+    left: 0;
+    line-height: 5.4rem;
+}
+
+.works-card {
+    margin: 0 1em;
+    border-radius: 48px;
+}
+
+.works .works-card:nth-child(2n+1) {
+    margin-bottom: 10em;
+}
+
+.works .works-card:nth-child(2n) {
+    margin-top: 20em;
+}
+
+.works-card__more {
+    width: 10em;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+
+.works-card__more .material-icons {
+    font-size: 1.6em;
+    left: 3.2em;
+    top: -0.2em;
+}
+
+.team {
+    position: relative;
+    margin: 8em 12em 4em;
+    padding: 16em 30em 16em 0;
+}
+
+.team-title {
+    width: 8em;
+}
+
+.team-para {
+    width: 16em;
+}
+
+.team-photos {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 5%;
+    width: 56em;
+    height: 56em;
+}
+
+.clients {
+    margin: 12em;
+}
+
+.client-cite {
+    width: 24em;
+}
+
+.footer {
+    padding: 4em 12em;
+}
+
+.footer-elements {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-section, .footer-contact {
+    margin: 0;
+}
+
+.footer-contact {
+    width: 40em;
+}
+
+.contact__span {
+    line-height: 2.8rem;
+}
+

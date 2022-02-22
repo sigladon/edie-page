@@ -7,6 +7,7 @@
 :root {
 /*-- Font Size --*/
     --website-name: 2.4rem;
+    --menu: 1.4em;
     --title: 2.4rem;
     --pretitle: 1.2rem;
     --section-title: 2.4rem;
@@ -52,9 +53,9 @@
 
 html {
     font-size: 62.5%;
+    scroll-padding-top: 8em;
     width: 100vw;
     height: 100vh;
-    scroll-padding-top: 8em;
 }
 
 .page {
@@ -65,8 +66,8 @@ html {
 }
 
 .header {
-    position:fixed;
     width: 100%;
+    position:fixed;
     background-color: white;
     top: 0;
     padding: 1em;
@@ -93,7 +94,7 @@ html {
 }
 
 .header-nav {
-    height: 18em;
+    height: 19em;
     margin: 0 2em;
     font-family: var(--poppins);
     background-color: white;
@@ -106,9 +107,11 @@ html {
 }
 
 .header-nav .menu {
+    margin: 1em 0;
 }
 
 .header-nav .menu__link {
+    font-size: var(--menu);
     font-weight: 500;
     color: var(--color-gray1);
 }
@@ -185,6 +188,7 @@ html {
 }
 
 .contact__input-input, .contact__input-button {
+    cursor: pointer;
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
@@ -211,6 +215,7 @@ html {
     color: var(--color-gray6);
     font-size: var(--section1-input);
     border-radius: 8px;
+    cursor: pointer;
 }
 
 .services {
@@ -275,6 +280,7 @@ html {
     border-radius: 12px;
     color: var(--color-gray3);
     padding: 0.8em;
+    cursor: pointer;
 }
 
 .active {
@@ -449,10 +455,15 @@ html {
 
 .footer {
     display: flex;
+    width: 100%;
     flex-direction: column;
     color: white;
     background-color: var(--color-dark-blue);
     padding: 4em;
+}
+
+.footer-elements {
+    margin: 0 0 8em;
 }
 
 .footer-nav {
