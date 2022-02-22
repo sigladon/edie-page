@@ -13,19 +13,32 @@
         <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@800&family=Montserrat:wght@500;700&family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
         <script src="https://kit.fontawesome.com/d593286f67.js" crossorigin="anonymous"></script>
     </head>
-    <body>
+    <body class="page">
         <header class="header">
-            <div class="website-name">
-                <p class="website-name__text">Edie</p>
+            <div class="header-content">
+                <div class="website-name">
+                    <p class="website-name__text">Edie</p>
+                </div>
+                <div id="menu-btn" class="menu-btn">
+                    <span class="material-icons">
+                    menu
+                    </span>
+                </div>
+                
             </div>
-            <div class="menu-btn">
-                <span class="material-icons">
-                menu
-                </span>
-            </div>
+            <nav id="menu" class="header-nav close-menu">
+                    <ul class="menu">
+                        <li class="menu__item"><a class="menu__link" href="#home" onclick="closeMenu()">Home</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#services" onclick="closeMenu()">Services</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#works" onclick="closeMenu()">Our Works</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#clients" onclick="closeMenu()">Clients</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#contact" onclick="closeMenu()">Contact</a></li>
+                    </ul>
+                
+            </nav>
         </header>
         <main class="main">
-            <section class="home">
+            <section id="home" class="home">
                 <p class="pretitle">Unhappy with your website?</p>
                 <h1 class="title">We create beautiful and fast web services</h1>
                 <figure class="team-image">
@@ -44,7 +57,7 @@
                     </div>
                 </form>
             </section>
-            <section class="services">
+            <section id="services" class="services">
                 <h2 class="section-title">We offer high demand services</h2>
                 <div class="services-card">
                     <div class="services-card__icon blue-icon">
@@ -77,7 +90,7 @@
                     <button class="services-card__button" type="button">Get started</button>
                 </div>
             </section>
-            <section class="works">
+            <section id="works" class="works">
                 <h2 class="section-title">Good design means good business</h2>
                 <div class="works-card">
                     <figure class="works-card__img">
@@ -114,7 +127,7 @@
                     </a>
                 </div>
             </section>
-            <section class="team">
+            <section id="team" class="team">
                 <p class="team-pretitle">Meet the team</p>
                 <h2 class="team-title">We are chilled and a laidback team</h2>
                 <p class="team-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
@@ -130,8 +143,55 @@
                     </figure>
                 </div>
             </section>
-            
+            <section id="clients" class="clients">
+                <p class="client-cite"><cite>"Fast and outstanding results. Edie understands their customer's needs. They have a young and telented team."</cite></p>
+                <div class="client-about">
+                    <figure class="client-about__photo">
+                        <img src="https://imgur.com/Ed7tMGP.jpg" alt="Karla Tran">
+                    </figure>
+                    <p class="client-about__name">Karla Tran</p>
+                    <p class="client-about__project">The Decorate Gatsby</p>
+                </div>
+            </section>
         </main>
+        <footer id="contact" class="footer">
+            <div class="footer-elements">
+                <nav class="footer-nav">
+                    <ul class="menu">
+                        <li class="menu__item"><a class="menu__link" href="#home">Home</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#services">Services</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#works">Our Works</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#clients">Clients</a></li>
+                        <li class="menu__item"><a class="menu__link" href="#contact">Contact</a></li>
+                    </ul>
+                </nav>
+                <section class="contact-section">
+                    <p class="website-name-footer">Edie</p>
+                    <i class="fa-brands fa-instagram-square"></i>
+
+                    <i class="fa-brands fa-linkedin"></i>
+
+                    <i class="fa-brands fa-twitter-square"></i>
+
+                    <i class="fa-brands fa-github-square"></i>
+                </section>
+
+                <form class="contact footer-contact">
+                    <span class="contact__span">Want us to contact you?</span>
+                    <div class="contact__input">
+                        <input class="contact__input-input" type="email" name="email" value="" placeholder="Email">
+                        <button class="contact__input-button" type="button">Join</button>
+                    </div>
+                </form>
+            </div>
+            <section class="created-by">
+                <p>created by <a href="">sigladon</a> - devChallenges.io</p>
+                
+            </section>
+
+            
+        </footer>
+
         <!--
 
 
@@ -140,14 +200,9 @@
 arrow_right_alt
 </span>
 
-<i class="fa-brands fa-instagram-square"></i>
-
-<i class="fa-brands fa-linkedin"></i>
-
-<i class="fa-brands fa-twitter-square"></i>
-
-<i class="fa-brands fa-github-square"></i>
         -->
-    
+    <script src="js/menu.js">
+        
+    </script>
     </body>
 </html>
